@@ -10,7 +10,7 @@ class Login extends CI_Controller
             'url'
         ));
         $this->load->library('session');
-        $this->load->database();
+  	$this->load->database();
     }
 
     public function index()
