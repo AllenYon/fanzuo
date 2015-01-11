@@ -9,8 +9,8 @@ class Login extends CI_Controller
             'form',
             'url'
         ));
-        $this->load->library('session');
-  	$this->load->database();
+        $this->load->library('session','jquery');
+        $this->load->database();
     }
 
     public function index()
@@ -68,7 +68,18 @@ class Login extends CI_Controller
     }
 
 
-    private  function login(){
+    public  function logout() {
+        $unset=array(
+            'username'=>'',
+            'phone'=>'',
+            'user_id'=>'',
+        );
+        $this->session->unset_userdata($unset);
+
+        $result=array(
+            'code'=>1001
+        );
+        echo json_encode($result);
 
     }
 

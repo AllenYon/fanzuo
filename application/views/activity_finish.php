@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>小饭桌列表</title>
     <style type="text/css">
         .action {
@@ -18,13 +19,6 @@
             var label_total_price = document.getElementById('label_total_price')
             label_total_price.innerText = aa_price
         }
-        //        $(document).ready(function () {
-        //            $("button").click(function () {
-        ////                var total_price=$("#total_price").value;
-        ////                alert("total ");
-        //                $("button").hide();
-        //            });
-        //        };
         function ci(id) {
 //            var amount = document.getElementById(id).value;
             var amount = document.getElementById("total_price").value;
@@ -49,7 +43,6 @@
                     return false;
                 }
             });
-
         }
 
     </script>

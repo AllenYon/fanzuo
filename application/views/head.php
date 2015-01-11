@@ -6,7 +6,6 @@
     <title></title>
 </head>
 <body>
-
 <?php echo validation_errors(); ?>
 <?php echo form_open('login/formsubmit'); ?>
 <table>
@@ -29,4 +28,5 @@
 </table>
 </form>
 </body>
+
 </html>
